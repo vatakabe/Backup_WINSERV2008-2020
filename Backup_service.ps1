@@ -6,7 +6,7 @@ $Now= Get-Date
 $Log_Path ="\\backupserver\Backup_powershell\Logs\"+$env:COMPUTERNAME
 $Log_Name =$CurrentDate+"_"+$env:COMPUTERNAME
 
-
+#Проверка пути и создание 
 Function CheckPath ($Path) {
 $Path_Exists = Test-Path -Path $Path
 if ($Path_Exists -eq $False) 
